@@ -1,0 +1,29 @@
+---
+title: 'Introdução'
+description: 'Bem vindo a referência da Expresso API'
+icon: code-branch
+---
+
+## Bem vindo
+
+Você pode começar usando nossa API criando um [aplicativo](https://dev.hubexpresso.com.br/app) em nosso [Portal do Desenvolvedor](https://dev.hubexpresso.com.br)
+
+<Card
+  title="Plant Store Endpoints"
+  icon="leaf"
+  href="https://github.com/mintlify/starter/blob/main/api-reference/openapi.json"
+>
+  View the OpenAPI specification file
+</Card>
+
+## Authentication
+
+All API endpoints are authenticated using Bearer tokens and picked up from the specification file.
+
+```json
+"security": [
+  {
+    "bearerAuth": []
+  }
+]
+```
