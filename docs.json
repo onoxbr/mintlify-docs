@@ -1,0 +1,96 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "mint",
+  "name": "Expresso API",
+  "colors": {
+    "primary": "#cf6a27",
+    "light": "#a74f15",
+    "dark": "#a74f15"
+  },
+  "favicon": "/logo/favicon.ico",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentaçâo",
+        "groups": [
+          {
+            "group": "Começar agora",
+            "pages": [
+              "introducao",
+              "quickstart",
+              "development"
+            ]
+          },
+          {
+            "group": "Essentials",
+            "pages": [
+              "essentials/markdown",
+              "essentials/code",
+              "essentials/images",
+              "essentials/settings",
+              "essentials/navigation",
+              "essentials/reusable-snippets"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "API Documentation",
+            "pages": [
+              "api-reference/introduction"
+            ]
+          },
+          {
+            "group": "Endpoint Examples",
+            "pages": [
+              "api-reference/endpoint/get",
+              "api-reference/endpoint/create",
+              "api-reference/endpoint/delete"
+            ]
+          }
+        ]
+      }
+    ],
+    "global": {
+      "anchors": [
+        {
+          "anchor": "HUB Expresso",
+          "href": "https://hubexpresso.com.br",
+          "icon": "mug-saucer"
+        },
+        {
+          "anchor": "Dashboard do desenvolvedor",
+          "href": "https://dev.hubexpresso.com.br",
+          "icon": "gauge"
+        }
+      ]
+    }
+  },
+  "logo": {
+    "light": "/logo/favicon.png",
+    "dark": "/logo/favicon.png"
+  },
+  "navbar": {
+    "links": [
+      {
+        "label": "Voltar ao site principal",
+        "href": "https://hubexpresso.com.br"
+      }
+    ],
+    "primary": {
+      "type": "button",
+      "label": "Dashboard",
+      "href": "https://dashboard.mintlify.com"
+    }
+  },
+  "footer": {
+    "socials": {
+      "x": "https://x.com/vlrsant",
+      "discord": "https://discord.gg/cafedosant"
+    }
+  }
+  
+}
