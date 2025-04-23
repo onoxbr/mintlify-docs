@@ -29,11 +29,11 @@ yarn add expressoapi-js
 <CodeGroup>
 
 ```javascript JavaScript
-const api = require("expressoapi-js");
+const { startAPI } = require("expressoapi-js");
 ```
 
 ```typescript TypeScript
-import api from "expressoapi-js";
+import { startAPI } from "expressoapi-js";
 ```
 
 </CodeGroup>
@@ -41,7 +41,7 @@ import api from "expressoapi-js";
 **Passo 3**: Inicialize a API usando sua chave de aplicação:
 
 ```javascript
-const api = require("expressoapi-js");
+const api = startAPI('12345-XXXXX-XXXXX')
 ```
 
 ## Atualizar SDK

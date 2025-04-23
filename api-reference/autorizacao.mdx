@@ -1,0 +1,29 @@
+---
+title: 'Autorização'
+description: 'Autorização da API'
+icon: shield
+---
+
+
+Para fazer requisições na Expresso API é necessário ter uma Chave de API, você pode gerar entrando em um [aplicativo](https://dev.hubexpresso.com.br/app) seu pelo [Portal do Desenvolvedor](https://dev.hubexpresso.com.br) e gerar uma chave de API
+
+<Card
+  title="Criar aplicação"
+  icon="folder-plus"
+  href="https://github.com/mintlify/starter/blob/main/api-reference/openapi.json"
+>
+  Crie sua aplicação e gere sua chave de API
+</Card>
+
+## Header
+
+Insira na sua requisição a header X-Api-Key, exemplo:
+
+```javascript
+const options = { method: 'GET', headers: {'x-api-key': '<api-key>'} };
+
+fetch('https://api.hubexpresso.com.br/user/{id}', options)
+  .then(response => response.json())
+  .then(response => console.log(response))
+  .catch(err => console.error(err));
+```
