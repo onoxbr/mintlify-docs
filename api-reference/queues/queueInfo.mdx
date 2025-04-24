@@ -1,0 +1,14 @@
+---
+title: 'Fila'
+description: 'Retorna as informações de uma fila da Hub'
+api: 'GET https://api.hubexpresso.com.br/queue/{name}'
+---
+
+<ParamField path="name" type="string" required initialValue="freeElo">
+    Nome da fila (freeElo & highElo)
+</ParamField>
+<Accordion title="Filas disponíveis" icon="table-list">
+  No momento existem apenas 2 filas disponíveis na hub, são elas:
+  - **freeElo**
+  - **highElo**
+</Accordion>

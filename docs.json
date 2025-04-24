@@ -35,7 +35,7 @@
         "groups": [
           {
             "group": "Documentação",
-            "pages": ["api-reference/introducao", "api-reference/autorizacao"]
+            "pages": ["api-reference/introducao", "api-reference/autorizacao", "api-reference/erros"]
           },
           {
             "group": "User Endpoints",
@@ -43,6 +43,13 @@
             "pages": [
               "api-reference/users/user",
               "api-reference/users/byRiot"
+            ]
+          },
+          {
+            "group": "Queue Endpoints",
+            "icon": "table-list",
+            "pages": [
+              "api-reference/queues/queueInfo"
             ]
           }
         ]
@@ -77,7 +84,7 @@
     "primary": {
       "type": "button",
       "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "href": "https://dev.hubexpresso.com.br/portal"
     }
   },
   "footer": {
