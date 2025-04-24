@@ -91,7 +91,7 @@
       "server": "https://api.hubexpresso.com/", 
       "auth": {
         "method": "key",
-        "name": "x-api-key"
+        "name": "Authorization"
       }
     }
   }

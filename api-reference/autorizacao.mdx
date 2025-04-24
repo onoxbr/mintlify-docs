@@ -17,10 +17,10 @@ Para fazer requisições na Expresso API é necessário ter uma Chave de API, vo
 
 ## Header
 
-Insira na sua requisição a header X-Api-Key, exemplo:
+Insira na sua requisição a header Authorization, exemplo:
 
 ```javascript
-const options = { method: 'GET', headers: {'x-api-key': '<api-key>'} };
+const options = { method: 'GET', headers: {'Authorization: '<api-key>'} };
 
 fetch('https://api.hubexpresso.com.br/user/{id}', options)
   .then(response => response.json())
