@@ -15,11 +15,11 @@ Siga os passos para realizar a instalação da nossa SDK:
 <CodeGroup>
 
 ```bash npm
-npm i expressoapi-js
+npm i @hubexpresso/sdk
 ```
 
 ```bash yarn
-yarn add expressoapi-js
+yarn add @hubexpresso/sdk
 ```
 
 </CodeGroup>
@@ -29,11 +29,11 @@ yarn add expressoapi-js
 <CodeGroup>
 
 ```javascript JavaScript
-const { startAPI } = require("expressoapi-js");
+const { startAPI } = require("@hubexpresso/sdk");
 ```
 
 ```typescript TypeScript
-import { startAPI } from "expressoapi-js";
+import { startAPI } from "@hubexpresso/sdk";
 ```
 
 </CodeGroup>
@@ -44,6 +44,22 @@ import { startAPI } from "expressoapi-js";
 const api = startAPI('12345-XXXXX-XXXXX')
 ```
 
+## Exemplo de uso
+```javascript
+import { startAPI } from "@hubexpresso/sdk";
+
+const api = startAPI("12345-XXXXX-XXXXX");
+
+try {
+  const user = await api.getUserById("abc123");
+  if (user) {
+    console.log("Usuário encontrado:", user.username);
+  }
+} catch (err) {
+  console.error("Erro ao buscar usuário:", err);
+}
+```
+
 ## Atualizar SDK
 
 Para atualizar a SDK, execute o comando abaixo em seu terminal:
@@ -51,11 +67,11 @@ Para atualizar a SDK, execute o comando abaixo em seu terminal:
 <CodeGroup>
 
 ```bash npm
-npm update expressoapi-js
+npm update @hubexpresso/sdk
 ```
 
 ```bash yarn
-yarn upgrade expressoapi-js
+yarn upgrade @hubexpresso/sdk
 ```
 
 </CodeGroup>
